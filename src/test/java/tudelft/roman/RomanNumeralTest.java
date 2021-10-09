@@ -1,10 +1,10 @@
 package tudelft.roman;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class RomanNumeralTest {
-
 
     @Test
     public void singleNumber() {
@@ -16,8 +16,8 @@ public class RomanNumeralTest {
     @Test
     public void numberWithManyDigits() {
         RomanNumeral roman = new RomanNumeral();
-        int result = roman.convert("VIII");
-        Assertions.assertEquals(8, result);
+        int result = roman.convert("XII");
+        Assertions.assertEquals(7, result);
     }
 
     @Test
