@@ -15,7 +15,12 @@ public class Mirror {
                 break;
             }
         }
+        if (string.length() % 2 == 1) {
+            return begin == end ? string : mirror;
+        }
+        else{
+            return begin == end + 1 ? string : mirror;
+        }
 
-        return begin == end ? string : mirror;
     }
 }
